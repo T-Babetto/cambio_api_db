@@ -49,8 +49,8 @@ def mostrar_menu():
     valor_reais = float(input('R$'))
 
     if valor_reais > 0.0:
-        real_em_dolar = valor_reais * cotacao_hoje.dolar
-        real_em_euro = valor_reais * cotacao_hoje.euro
+        real_em_dolar = valor_reais / cotacao_hoje.dolar
+        real_em_euro = valor_reais / cotacao_hoje.euro
         print(f'\n R$ {valor_reais} = US$ {real_em_dolar}')
         print(f'\n R$ {valor_reais} = € {real_em_euro}')
         print('\n')
